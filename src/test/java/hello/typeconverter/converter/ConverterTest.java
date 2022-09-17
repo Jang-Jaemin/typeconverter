@@ -1,3 +1,5 @@
+//  ConverterTest - 타입컨버터테스트코드
+
 package hello.typeconverter.converter;
 
 import hello.typeconverter.type.IpPort;
@@ -22,6 +24,8 @@ public class ConverterTest {
         assertThat(result).isEqualTo("10");
     }
 
+    //  ConverterTest - IpPort 컨버터테스트추가
+    //  stringToIpPort 과 ipPortToString
     @Test
     void stringToIpPort() {
         IpPortToStringConverter converter = new IpPortToStringConverter();

@@ -1,3 +1,7 @@
+//  StringToIpPortConverter - 컨버터
+//  127.0.0.1:8080 같은문자를입력하면IpPort 객체를만들어반환한다.
+//  IpPort객체를입력하면127.0.0.1:8080 같은문자를반환한다.
+
 package hello.typeconverter.converter;
 
 import hello.typeconverter.type.IpPort;
