@@ -26,6 +26,12 @@ public class HelloController {
     public String helloV2(@RequestParam Integer data) {
         System.out.println("data = " + data);
         return "ok";
+        //  설명 :
+        //  처리과정
+        //  @RequestParam은@RequestParam을처리하는ArgumentResolver인
+        //  RequestParamMethodArgumentResolver에서ConversionService를사용해서타입을변환한다.
+        //  부모 클래스와다양한외부클래스를호출하는등복잡한내부과정을거치기때문에대략이렇게처리되는 것으로이해해도충분하다.
+        //  만약더깊이있게확인하고싶으면IpPortConverter에디버그브레이크 포인트를걸어서확인해보자.
     }
 
     @GetMapping("/ip-port")
