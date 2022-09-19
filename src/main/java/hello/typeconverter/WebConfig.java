@@ -1,5 +1,4 @@
-//  웹 애플리케이션에 COnverter를 적용한다.
-//  WebConfig - 컨버터 등록.
+//  포맷터적용하기
 
 
 package hello.typeconverter;
@@ -29,6 +28,6 @@ public class WebConfig implements WebMvcConfigurer {
     }
 }
 
-//  스프링은내부에서ConversionService를제공한다.
-//  우리는WebMvcConfigurer가제공하는 addFormatters()를사용해서추가하고싶은컨버터를등록하면된다.
-//  이렇게하면스프링은내부에서 사용하는ConversionService에컨버터를추가해준다.
+//  StringToIntegerConverter, IntegerToStringConverter를꼭주석처리하자.
+//  MyNumberFormatter도숫자 문자, 문자 숫자로변경하기때문에둘의기능이겹친다.
+//  우선순위는 컨버터가우선하므로포맷터가적용되지않고, 컨버터가적용된다
