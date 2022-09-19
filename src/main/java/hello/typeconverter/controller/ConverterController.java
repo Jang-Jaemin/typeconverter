@@ -31,6 +31,7 @@ public class ConverterController {
         IpPort ipPort = form.getIpPort();
         model.addAttribute("ipPort", ipPort);
         return "converter-view";
+        //  Model에 숫자 10000와 inPort 객체를 담아서 뷰 템플릿에 전달한다.
     }
 
     @Data

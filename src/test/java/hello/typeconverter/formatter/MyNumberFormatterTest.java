@@ -25,3 +25,9 @@ class MyNumberFormatterTest {
         assertThat(result).isEqualTo("1,000");
     }
 }
+
+//  parse()의결과가Long이기때문에isEqualTo(1000L)을통해비교할때마지막에L을넣어주어야 한다.
+
+//  참고
+//  스프링은용도에따라다양한방식의포맷터를제공한다. > Formatter 포맷터
+//  AnnotationFormatterFactory 필드의타입이나애노테이션정보를활용할수있는포맷터이다.
